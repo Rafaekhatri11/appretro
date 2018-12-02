@@ -10,7 +10,7 @@ import ApolloClient from "apollo-boost";
 
 
 const client = new ApolloClient({
-  uri: "https://serverretro.herokuapp.com/"
+  uri: "https://serverretro.herokuapp.com"
 })
 
 
