@@ -1,0 +1,27 @@
+<html>
+<body>
+
+<script>
+function chbx(obj)
+{
+var that = obj;
+   if(document.getElementById(that.id).checked == true) {
+      document.getElementById('id1').checked = false;
+      document.getElementById('id2').checked = false;
+      document.getElementById('id3').checked = false;
+      document.getElementById(that.id).checked = true;
+   }
+}
+</script>
+
+<form action="your action" method="post">
+
+<Input id='id1' type='Checkbox' Name ='name1' value ="S" onclick="chbx(this)"><br />
+<Input id='id2' type='Checkbox' Name ='name2' value ="S" onclick="chbx(this)"><br />
+<Input id='id3' type='Checkbox' Name ='name3' value ="S" onclick="chbx(this)"><br />
+
+<input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>
